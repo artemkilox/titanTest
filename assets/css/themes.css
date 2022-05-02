@@ -1,0 +1,97 @@
+.themes {
+  z-index: 891;
+  margin: 10px;
+  position: absolute;
+}
+.themes .text-wrapper {
+  margin-left: 5px;
+}
+.themes .standard {
+  display: flex;
+  margin-top: 5px;
+  padding: 5px;
+  height: 1em;
+  border: 1px solid black;
+}
+.themes .standard .standard-color {
+  margin-top: 2px;
+  display: flex;
+  height: 0.8em;
+  width: 0.8em;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.themes .standard .standard-color .std-l {
+  height: 0.8em;
+  width: 0.4em;
+  border-radius: 100% 0 0 100%/50% 0 0 50%;
+  background: #656565;
+}
+.themes .standard .standard-color .std-r {
+  height: 0.8em;
+  width: 0.4em;
+  border-radius: 0 100% 100% 0/0 50% 50% 0;
+  background: #dedede;
+}
+.themes .standard:hover {
+  color: #fff;
+  background: #656565;
+  cursor: pointer;
+}
+.themes .bw {
+  margin-top: 5px;
+  padding: 5px;
+  height: 1em;
+  border: 1px solid black;
+  display: flex;
+}
+.themes .bw .bw-color {
+  margin-top: 2px;
+  display: flex;
+  height: 0.8em;
+  width: 0.8em;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.themes .bw .bw-color .bw-l {
+  height: 0.8em;
+  width: 0.4em;
+  border-radius: 100% 0 0 100%/50% 0 0 50%;
+  background: #000;
+}
+.themes .bw .bw-color .bw-r {
+  height: 0.8em;
+  width: 0.4em;
+  border-radius: 0 100% 100% 0/0 50% 50% 0;
+  background: #fff;
+}
+.themes .bw:hover {
+  color: #fff;
+  background: #656565;
+  cursor: pointer;
+}
+.themes .dark {
+  display: flex;
+  margin-top: 5px;
+  padding: 5px;
+  height: 1em;
+  border: 1px solid black;
+}
+.themes .dark .dark-color {
+  height: 0.8em;
+  width: 0.8em;
+  border-radius: 50%;
+  background: #656565;
+  border: 1px solid black;
+}
+.themes .dark:hover {
+  color: #fff;
+  background: #656565;
+  cursor: pointer;
+}
+.themes .chosen {
+  color: #fff;
+  background: #bababa;
+}
+
+/*# sourceMappingURL=themes.css.map */

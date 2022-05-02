@@ -1,0 +1,282 @@
+@font-face
+{
+  font-family: gost;
+  src: url("../../fonts/GOST_A.TTF");
+}
+
+*{
+  font-family: gost;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+
+  .outer-wrapper{
+    color: var(--main-text-color);
+    display: flex;
+    justify-content: space-around;
+
+    .content-wrapper{
+      margin-top: 100px;
+      width: 600px;
+      height: 500px;
+      background: var(--wrapper-bg-color);
+      display: flex;
+      justify-content: space-around;
+      background-image: var(--wrapper-border);
+
+      .valve{
+        position: absolute;
+
+        .top-val{
+          z-index: 982;
+          position: absolute;
+          left: -70px;
+          top: 125px;
+          width: 50px;
+          height: 50px;
+          transition: .2s;
+          background: var(--val-image);
+        }
+
+        .top-val:hover{
+          transform: scale(1.1);
+        }
+
+        .bot-val{
+          z-index: 981;
+          position: absolute;
+          left: 70px;
+          top: 350px;
+          width: 50px;
+          height: 50px;
+          transition: .2s;
+          background: var(--val-image);
+        }
+        .bot-val:hover{
+          transform: scale(1.1);
+        }
+        .pump{
+          z-index: 980;
+          position: absolute;
+          left: -135px;
+          top: 370px;
+          width: 55px;
+          height: 79px;
+          background: var(--pump-image);
+        }
+        .blades{
+          transition: .2s;
+          z-index: 999;
+          position: absolute;
+          left: -132px;
+          top: 397px;
+          width: 48px;
+          height: 48px;
+          background: var(--blades-image);
+        }
+        .blades:hover{
+          transform: scale(1.1);
+        }
+        .pump-light{
+          position: absolute;
+          left: -127px;
+          top: 378px;
+          z-index: 998;
+          width: 12px;
+          height: 12px;
+          background: #ff0000;
+        }
+        .pillar{
+          display: flex;
+          position: absolute;
+          left: -240px;
+          top: 300px;
+          z-index: 970;
+          width: 50px;
+          height: 130px;
+
+          .pole{
+            display: flex;
+            justify-content: space-around;
+            width: 10px;
+            height: 130px;
+            border: 1px solid var(--main-border-color);
+            background: #fff;
+
+            .level{
+              position:absolute;
+              left: 1px;
+              bottom: -1px;
+              width: 7px;
+              height: 0px;
+              background: rgb(25, 255, 0);
+            }
+          }
+          .text{
+            margin-left: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+        }
+      }
+
+      .drainage{
+        width: 510px;
+        margin-top: 50px;
+
+        .water-flow{
+          position: absolute;
+          height: 411px;
+          width: 510px;
+
+          .outside-flow{
+
+            .from-pump{
+              position: absolute;
+              left: 128px;
+              bottom: 91px;
+              width: 10px;
+              height: 0;
+              z-index: 976;
+              background: var(--water-color);
+            }
+            .outside{
+              z-index: 975;
+              position: absolute;
+              left: 128px;
+              top: 97px;
+              width: 0;
+              height: 10px;
+              background: var(--water-color);
+            }
+          }
+
+          .to-the-barrel{
+            position: absolute;
+            right: 0;
+            top: 320px;
+            z-index: 977;
+            width: 0;
+            height: 10px;
+            background: var(--water-color);
+            animation: bot-water-in 2s linear 1 forwards;
+          }
+        }
+
+        .top{
+
+          .top-arrow{
+            position: absolute;
+            margin-top: 70px;
+            margin-left: 400px;
+          }
+          .struct{
+            border-top: 5px solid var(--main-border-color);
+            border-left: 5px solid var(--main-border-color);
+            border-right: 5px solid var(--main-border-color);
+            border-bottom: none;
+            position: absolute;
+            width: 272px;
+            height: 204px;
+            background: var(--struct-background);
+            background-size: 10px 10px;
+          }
+          .top-pipe{
+            position: absolute;
+            display: grid;
+            width: 510px;
+            height: 340px;
+            grid-template-columns: 0.5fr 1.5fr;
+            grid-template-rows: 1fr 2.5fr;
+
+            .tr{
+              border-bottom: 2px solid var(--main-border-color);
+            }
+            .bl{
+              border-right: 2px solid var(--main-border-color);
+            }
+            .br{
+              border-left: 2px solid var(--main-border-color);
+              border-top: 2px solid var(--main-border-color);
+              margin-top: 10px;
+              margin-left: 10px;
+            }
+          }
+        }
+        .floor{
+          z-index: 989;
+          position: absolute;
+          margin-top: 209px;
+          width: 510px;
+          height: 20px;
+          background: var(--floor-image);
+        }
+        .bottom{
+          display: flex;
+
+          .barrel{
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 229px;
+            width: 255px;
+            height: 170px;
+            border: 2px solid var(--main-border-color);
+
+            .barr-level{
+              position:absolute;
+              bottom:0;
+              width: 255px;
+              height: 0;
+              background: var(--barr-watercolor);
+            }
+          }
+
+          .bot-pipe{
+            margin-top: 238px;
+            width: 255px;
+
+            .top-wall{
+              height: 80px;
+              border-bottom: 2px solid var(--main-border-color);
+            }
+            .bot-wall{
+              margin-top: 10px;
+              height: 50px;
+              border-top: 2px solid var(--main-border-color);
+            }
+            .bot-arrow{
+              position: absolute;
+              margin-top: 100px;
+              margin-left: 150px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//////////////// ANIMATIONS ///////////////////////
+
+@keyframes bot-water-in {
+  from {width: 0;}
+  to {width: 160px;}
+}
+@keyframes bot-val-open {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(-90deg);}
+}
+@keyframes bot-val-close {
+  from {transform: rotate(-90deg);}
+  to {transform: rotate(0deg);}
+}
+@keyframes blades-fury {
+  from {transform: rotate(0);}
+  to {transform: rotate(360deg);}
+}
+@keyframes pumped-up {
+  from {height: 0;}
+  to {height: 223px;}
+}

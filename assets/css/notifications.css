@@ -1,0 +1,81 @@
+@charset "UTF-8";
+.notifications {
+  z-index: 892;
+  margin-left: 150px;
+  margin-top: 30px;
+  position: absolute;
+  background: #ffffff;
+  padding: 10px;
+}
+
+.hider {
+  display: block;
+  z-index: 890;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+  opacity: 0.5;
+}
+
+.clickObjects {
+  left: 150px;
+  position: absolute;
+  text-align: center;
+  margin: 20px;
+  width: 150px;
+}
+.clickObjects .okBtn {
+  margin: 10px auto 0;
+  padding: 5px;
+  width: 100px;
+  transition: 0.2s;
+}
+.clickObjects .okBtn:hover {
+  color: #fff;
+  background: #656565;
+  cursor: pointer;
+}
+
+.circle1 {
+  z-index: 1000;
+  position: absolute;
+  left: -85px;
+  top: 110px;
+  width: 80px;
+  height: 80px;
+  background-image: url("../../resourсes/выделитель.svg");
+  animation: rotation 1s infinite;
+}
+
+.circle2 {
+  z-index: 1001;
+  position: absolute;
+  left: 55px;
+  top: 335px;
+  width: 80px;
+  height: 80px;
+  background-image: url("../../resourсes/выделитель.svg");
+  animation: rotation 1s infinite;
+}
+
+.circle3 {
+  z-index: 1002;
+  position: absolute;
+  left: -147px;
+  top: 382px;
+  width: 80px;
+  height: 80px;
+  background-image: url("../../resourсes/выделитель.svg");
+  animation: rotation 1s infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=notifications.css.map */

@@ -1,0 +1,109 @@
+.themes{
+  z-index: 891;
+  margin: 10px;
+  position: absolute;
+
+  .text-wrapper{
+    margin-left: 5px;
+  }
+
+  .standard{
+    display: flex;
+    margin-top: 5px;
+    padding: 5px;
+    height: 1em;
+    border: 1px solid black;
+
+    .standard-color{
+      margin-top: 2px;
+      display: flex;
+      height: .8em;
+      width: .8em;
+      border-radius: 50%;
+      border: 1px solid black;
+
+      .std-l{
+        height: .8em;
+        width: .4em;
+        border-radius: 100% 0 0 100% / 50% 0 0 50%;
+        background: #656565;
+      }
+      .std-r{
+        height: .8em;
+        width: .4em;
+        border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+        background: #dedede;
+      }
+    }
+  }
+
+  .standard:hover{
+    color: #fff;
+    background: #656565;
+    cursor: pointer;
+  }
+
+  .bw{
+    margin-top: 5px;
+    padding: 5px;
+    height: 1em;
+    border: 1px solid black;
+    display: flex;
+
+    .bw-color{
+      margin-top: 2px;
+      display: flex;
+      height: .8em;
+      width: .8em;
+      border-radius: 50%;
+      border: 1px solid black;
+
+      .bw-l{
+        height: .8em;
+        width: .4em;
+        border-radius: 100% 0 0 100% / 50% 0 0 50%;
+        background: #000;
+      }
+      .bw-r{
+        height: .8em;
+        width: .4em;
+        border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+        background: #fff;
+      }
+    }
+  }
+
+  .bw:hover{
+    color: #fff;
+    background: #656565;
+    cursor: pointer;
+  }
+
+  .dark{
+    display: flex;
+    margin-top: 5px;
+    padding: 5px;
+    height: 1em;
+    border: 1px solid black;
+
+    .dark-color{
+      height: .8em;
+      width: .8em;
+      border-radius: 50%;
+      background: #656565;
+      border: 1px solid black;
+    }
+  }
+
+  .dark:hover{
+    color: #fff;
+    background: #656565;
+    cursor: pointer;
+  }
+
+  .chosen{
+    color: #fff;
+    background: #bababa;
+  }
+
+}

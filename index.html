@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Водоотведение</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/themes.css">
+    <link rel="stylesheet" href="assets/css/notifications.css">
+</head>
+<body>
+    <div class="notifications">
+        <div id="choseTheme" class="chose-theme">
+            ←---- Выберите тему
+        </div>
+
+    </div>
+    <div class="themes" >
+        <h2>Themes</h2>
+        <div id="mainTheme" class="standard">
+            <div class="standard-color">
+                <div class="std-l"></div>
+                <div class="std-r"></div>
+            </div>
+            <div class="text-wrapper">Standard</div>
+        </div>
+        <div id="blackWhite" class="bw">
+            <div class="bw-color">
+                <div class="bw-l"></div>
+                <div class="bw-r"></div>
+            </div>
+            <div class="text-wrapper">Black & White</div>
+        </div>
+        <div id="darkTheme" class="dark">
+            <div class="dark-color"></div>
+            <div class="text-wrapper">Dark</div>
+        </div>
+    </div>
+    <div id="hider" class="hider"></div>
+    <div id="clickObj" class="clickObjects">
+        <div>Кликайте на объекты</div>
+        <div id="okBtn" class="okBtn">OK</div>
+    </div>
+    <div class="outer-wrapper">
+        <div class="content-wrapper">
+            <div class="valve">
+                <div class="pillar">
+                    <div class="pole">
+                        <div id="level" class="level"></div>
+                    </div>
+                    <div class="text">
+                        <div>2000</div>
+                        <div>1000</div>
+                        <div>0</div>
+                    </div>
+                </div>
+<!--                Notifications-->
+                <div id="circle1" class="circle1"></div>
+                <div id="circle2" class="circle2"></div>
+                <div id="circle3" class="circle3"></div>
+<!--                /////////////////-->
+                <div id="topVal" class="top-val"></div>
+                <input id="topValCheck" type="checkbox" hidden >
+                <div id="botVal" class="bot-val"></div>
+                <input id="botValCheck" type="checkbox" hidden >
+                <div id="pumpLed" class="pump-light"></div>
+                <div id="pump" class="pump"></div>
+                <input id="pumpCheck" type="checkbox" hidden >
+                <div id="pumpBlades" class="blades"></div>
+            </div>
+            <div class="drainage">
+                <div class="water-flow">
+                    <div class="outside-flow">
+                        <div id="fromPump" class="from-pump"></div>
+                        <div id="outside" class="outside"></div>
+                    </div>
+                    <div id="toTheBarrel" class="to-the-barrel"></div>
+                </div>
+                <div class="top">
+                    <div class="struct"></div>
+                    <div class="top-arrow">→</div>
+                    <div class="top-pipe">
+                        <div class="tl"></div>
+                        <div class="tr"></div>
+                        <div class="bl"></div>
+                        <div class="br"></div>
+                    </div>
+                </div>
+                <div class="floor"></div>
+                <div class="bottom">
+                    <div id="barr" class="barrel">
+                        <div id="barrLevel" class="barr-level"></div>
+                    </div>
+                    <div class="bot-pipe">
+                        <div class="bot-arrow">←</div>
+                        <div class="top-wall"></div>
+                        <div class="bot-wall"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style id="stylesWaterIn"></style>
+    <style id="stylesWaterOut"></style>
+    <style id="stylesBarrel"></style>
+    <style id="themeStyles">
+        :root {
+            --wrapper-border: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill: none; stroke: rgb(154, 154, 154); stroke-width: 6; stroke-dasharray: 20 20'/></svg>");
+            --blades-image: url("resourсes/вентилятор.svg");
+            --struct-background: url("resourсes/стена.svg");
+            --floor-image: url("resourсes/кирпич.svg");
+            --val-image: url("resourсes/вентель.svg");
+            --pump-image: url("resourсes/насос.svg");
+            --wrapper-bg-color: rgba(231, 220, 208, 0.2);
+            --barr-watercolor: rgba(209, 209, 255, 0.5);
+            --water-color: rgb(209, 209, 255);
+            --main-border-color: #656565;
+            --main-text-color: #656565;
+        }
+    </style>
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/interface.js"></script>
+
+</body>
+</html>

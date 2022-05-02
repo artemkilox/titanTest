@@ -1,0 +1,27 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.96 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #666665;
+      }
+
+      .cls-2 {
+        fill: #ededed;
+      }
+    </style>
+  </defs>
+  <g>
+    <g>
+      <path class="cls-1" d="M10,19.75a6.73,6.73,0,0,1-6.72-6.48h1a5.74,5.74,0,1,0,6-6v-1A6.73,6.73,0,0,1,10,19.75Z" transform="translate(-3.02 0)"/>
+      <path class="cls-2" d="M10.5,6.56a6.48,6.48,0,1,1-7,7H4A6,6,0,1,0,10.5,7V6.56M10,6V7.52A5.5,5.5,0,1,1,4.5,13H3a7,7,0,1,0,7-7Z" transform="translate(-3.02 0)"/>
+    </g>
+    <g>
+      <path class="cls-1" d="M3.27,12.77V.25H9.75v7a5.75,5.75,0,0,0-5.49,5.49Z" transform="translate(-3.02 0)"/>
+      <path class="cls-2" d="M9.5.5V7A6,6,0,0,0,4,12.52h-.5V.5h6M10,0H3V13H4.5A5.51,5.51,0,0,1,10,7.52V0Z" transform="translate(-3.02 0)"/>
+    </g>
+    <g>
+      <rect class="cls-1" x="1.68" y="1.79" width="3.51" height="3.51"/>
+      <path class="cls-2" d="M8,2v3H5V2H8m.5-.5h-4v4h4v-4Z" transform="translate(-3.02 0)"/>
+    </g>
+  </g>
+</svg>
